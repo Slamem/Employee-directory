@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Справочник сотрудников</title>
+    <link rel="stylesheet" href="./css/normilize.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <script src="https://kit.fontawesome.com/9077737983.js" crossorigin="anonymous"></script>
+    <script src="./js/app.js" defer></script>
+</head>
+<body>
+    <main class="app">
+
+            <form id="app-form">
+                <div class="app-form__item">
+                    <label for="name-input">Фамилия Имя:</label>
+                    <input id="name-input" type="text" name="username">    
+                    <div class="errors"></div>
+                </div>
+                <div class="app-form__item">
+                    <label for="position-input">Должность:</label>
+                    <input id="position-input" type="text" name="position">
+                    <div class="errors"></div>
+                </div>
+                <div class="app-form__item">
+                    <label for="email-input">Email:</label>
+                    <input id="email-input" type="email" name="email">
+                    <div class="errors"></div>
+                </div>
+                <div class="app-form__item">
+                    <label for="phone-input">Телефон:</label>
+                    <input id="phone-input" type="number" name="phone">
+                    <div class="errors"></div>
+                </div>
+                <div class="app-form__item">
+                    <button id="add-button" type="submit">Сохранить</button>
+                </div>
+            </form>
+
+            <ul id="app-list"></ul>
+    </main>
+</body>
+</html>
